@@ -16,8 +16,8 @@ pipeline {
                     allowMissing: false,
                     alwaysLinkToLastBuild: false,
                     keepAll: true,
-                    reportDir: 'coverage',
-                    reportFiles: 'newman/report.html',
+                    reportDir: 'newman',
+                    reportFiles: 'report.html',
                     reportName: 'HTML Report'
                   ]
             }
