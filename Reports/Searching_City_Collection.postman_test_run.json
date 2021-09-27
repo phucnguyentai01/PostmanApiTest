@@ -1,0 +1,1156 @@
+{
+	"id": "bde88de7-6513-4117-b3e0-560cddaa108e",
+	"name": "Searching_City_Collection",
+	"timestamp": "2021-09-04T02:24:43.471Z",
+	"collection_id": "0-d198a9b4-2a87-4bd5-8b20-d2c680eead91",
+	"folder_id": 0,
+	"environment_id": "c6891a2b-a1d4-4c56-bb4d-ad5e13b3dffe",
+	"totalPass": 239,
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "27bdeec4-a625-4adf-a3cf-5b199adf614f",
+			"name": "Get weather by city name",
+			"time": 167,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify Status code is 200": true,
+				"id is 1569684": true,
+				"city_name is Pleiku": true,
+				"country is VN": true,
+				"lon is 108": true,
+				"lat is 13.9833": true
+			},
+			"testPassFailCounts": {
+				"Verify Status code is 200": {
+					"pass": 11,
+					"fail": 0
+				},
+				"id is 1566559": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tay Ninh": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is VN": {
+					"pass": 6,
+					"fail": 0
+				},
+				"lon is 106.1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 11.3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 833": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Ḩeşār-e Sefīd": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is IR": {
+					"pass": 2,
+					"fail": 0
+				},
+				"lon is 47.1594": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 34.3305": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 2960": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is ‘Ayn Ḩalāqīm": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is SY": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 36.3219": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 34.9401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 3245": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Taglag": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 44.9833": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 38.45": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 72855": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Al Jawl": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is YE": {
+					"pass": 2,
+					"fail": 0
+				},
+				"lon is 48.2807": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 14.4563": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 72965": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Marib City": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 45.3034": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 15.4156": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1563281": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tuy Hoa": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 109.3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 13.0833": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1563287": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tuyen Quang": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 105.2181": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 21.8233": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1563926": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tra Vinh": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 106.3453": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 9.9347": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1564676": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tỉnh Tiền Giang": {
+					"pass": 0,
+					"fail": 1
+				},
+				"lon is 106.1667": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 10.4167": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1569684": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Pleiku": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 108": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 13.9833": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				143,
+				1159,
+				1169,
+				1185,
+				1160,
+				1169,
+				50,
+				367,
+				56,
+				53,
+				167
+			],
+			"allTests": [
+				{
+					"Verify Status code is 200": true,
+					"id is 1566559": true,
+					"city_name is Tay Ninh": true,
+					"country is VN": true,
+					"lon is 106.1": true,
+					"lat is 11.3": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 833": true,
+					"city_name is Ḩeşār-e Sefīd": true,
+					"country is IR": true,
+					"lon is 47.1594": true,
+					"lat is 34.3305": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 2960": true,
+					"city_name is ‘Ayn Ḩalāqīm": true,
+					"country is SY": true,
+					"lon is 36.3219": true,
+					"lat is 34.9401": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 3245": true,
+					"city_name is Taglag": true,
+					"country is IR": true,
+					"lon is 44.9833": true,
+					"lat is 38.45": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 72855": true,
+					"city_name is Al Jawl": true,
+					"country is YE": true,
+					"lon is 48.2807": true,
+					"lat is 14.4563": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 72965": true,
+					"city_name is Marib City": true,
+					"country is YE": true,
+					"lon is 45.3034": true,
+					"lat is 15.4156": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1563281": true,
+					"city_name is Tuy Hoa": true,
+					"country is VN": true,
+					"lon is 109.3": true,
+					"lat is 13.0833": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1563287": true,
+					"city_name is Tuyen Quang": true,
+					"country is VN": true,
+					"lon is 105.2181": true,
+					"lat is 21.8233": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1563926": true,
+					"city_name is Tra Vinh": true,
+					"country is VN": true,
+					"lon is 106.3453": true,
+					"lat is 9.9347": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1564676": true,
+					"city_name is Tỉnh Tiền Giang": false,
+					"country is VN": true,
+					"lon is 106.1667": true,
+					"lat is 10.4167": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1569684": true,
+					"city_name is Pleiku": true,
+					"country is VN": true,
+					"lon is 108": true,
+					"lat is 13.9833": true
+				}
+			]
+		},
+		{
+			"id": "d76bf41d-3a80-40ae-af41-330d34cfc658",
+			"name": "Get weather by city name - upper",
+			"time": 51,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify Status code is 200": true,
+				"id is 1569684": true,
+				"city_name is Pleiku": true,
+				"country is VN": true,
+				"lon is 108": true,
+				"lat is 13.9833": true
+			},
+			"testPassFailCounts": {
+				"Verify Status code is 200": {
+					"pass": 11,
+					"fail": 0
+				},
+				"id is 1566559": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tay Ninh": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is VN": {
+					"pass": 6,
+					"fail": 0
+				},
+				"lon is 106.1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 11.3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 833": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Ḩeşār-e Sefīd": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is IR": {
+					"pass": 2,
+					"fail": 0
+				},
+				"lon is 47.1594": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 34.3305": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 2960": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is ‘Ayn Ḩalāqīm": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is SY": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 36.3219": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 34.9401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 3245": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Taglag": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 44.9833": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 38.45": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 72855": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Al Jawl": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is YE": {
+					"pass": 2,
+					"fail": 0
+				},
+				"lon is 48.2807": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 14.4563": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 72965": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Marib City": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 45.3034": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 15.4156": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1563281": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tuy Hoa": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 109.3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 13.0833": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1563287": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tuyen Quang": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 105.2181": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 21.8233": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1563926": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tra Vinh": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 106.3453": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 9.9347": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1564676": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tỉnh Tiền Giang": {
+					"pass": 0,
+					"fail": 1
+				},
+				"lon is 106.1667": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 10.4167": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1569684": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Pleiku": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 108": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 13.9833": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				46,
+				1133,
+				58,
+				50,
+				51,
+				46,
+				47,
+				51,
+				63,
+				68,
+				51
+			],
+			"allTests": [
+				{
+					"Verify Status code is 200": true,
+					"id is 1566559": true,
+					"city_name is Tay Ninh": true,
+					"country is VN": true,
+					"lon is 106.1": true,
+					"lat is 11.3": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 833": true,
+					"city_name is Ḩeşār-e Sefīd": true,
+					"country is IR": true,
+					"lon is 47.1594": true,
+					"lat is 34.3305": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 2960": true,
+					"city_name is ‘Ayn Ḩalāqīm": true,
+					"country is SY": true,
+					"lon is 36.3219": true,
+					"lat is 34.9401": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 3245": true,
+					"city_name is Taglag": true,
+					"country is IR": true,
+					"lon is 44.9833": true,
+					"lat is 38.45": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 72855": true,
+					"city_name is Al Jawl": true,
+					"country is YE": true,
+					"lon is 48.2807": true,
+					"lat is 14.4563": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 72965": true,
+					"city_name is Marib City": true,
+					"country is YE": true,
+					"lon is 45.3034": true,
+					"lat is 15.4156": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1563281": true,
+					"city_name is Tuy Hoa": true,
+					"country is VN": true,
+					"lon is 109.3": true,
+					"lat is 13.0833": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1563287": true,
+					"city_name is Tuyen Quang": true,
+					"country is VN": true,
+					"lon is 105.2181": true,
+					"lat is 21.8233": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1563926": true,
+					"city_name is Tra Vinh": true,
+					"country is VN": true,
+					"lon is 106.3453": true,
+					"lat is 9.9347": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1564676": true,
+					"city_name is Tỉnh Tiền Giang": false,
+					"country is VN": true,
+					"lon is 106.1667": true,
+					"lat is 10.4167": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1569684": true,
+					"city_name is Pleiku": true,
+					"country is VN": true,
+					"lon is 108": true,
+					"lat is 13.9833": true
+				}
+			]
+		},
+		{
+			"id": "a96d5a30-9653-4bb0-b641-0a4fd812198e",
+			"name": "Get weather by city name - lower",
+			"time": 357,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify Status code is 200": true,
+				"id is 1569684": true,
+				"city_name is Pleiku": true,
+				"country is VN": true,
+				"lon is 108": true,
+				"lat is 13.9833": true
+			},
+			"testPassFailCounts": {
+				"Verify Status code is 200": {
+					"pass": 11,
+					"fail": 0
+				},
+				"id is 1566559": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tay Ninh": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is VN": {
+					"pass": 6,
+					"fail": 0
+				},
+				"lon is 106.1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 11.3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 833": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Ḩeşār-e Sefīd": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is IR": {
+					"pass": 2,
+					"fail": 0
+				},
+				"lon is 47.1594": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 34.3305": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 2960": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is ‘Ayn Ḩalāqīm": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is SY": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 36.3219": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 34.9401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 3245": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Taglag": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 44.9833": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 38.45": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 72855": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Al Jawl": {
+					"pass": 1,
+					"fail": 0
+				},
+				"country is YE": {
+					"pass": 2,
+					"fail": 0
+				},
+				"lon is 48.2807": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 14.4563": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 72965": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Marib City": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 45.3034": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 15.4156": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1563281": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tuy Hoa": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 109.3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 13.0833": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1563287": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tuyen Quang": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 105.2181": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 21.8233": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1563926": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tra Vinh": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 106.3453": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 9.9347": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1564676": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Tỉnh Tiền Giang": {
+					"pass": 0,
+					"fail": 1
+				},
+				"lon is 106.1667": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 10.4167": {
+					"pass": 1,
+					"fail": 0
+				},
+				"id is 1569684": {
+					"pass": 1,
+					"fail": 0
+				},
+				"city_name is Pleiku": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lon is 108": {
+					"pass": 1,
+					"fail": 0
+				},
+				"lat is 13.9833": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53,
+				45,
+				1136,
+				49,
+				49,
+				52,
+				48,
+				49,
+				51,
+				48,
+				357
+			],
+			"allTests": [
+				{
+					"Verify Status code is 200": true,
+					"id is 1566559": true,
+					"city_name is Tay Ninh": true,
+					"country is VN": true,
+					"lon is 106.1": true,
+					"lat is 11.3": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 833": true,
+					"city_name is Ḩeşār-e Sefīd": true,
+					"country is IR": true,
+					"lon is 47.1594": true,
+					"lat is 34.3305": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 2960": true,
+					"city_name is ‘Ayn Ḩalāqīm": true,
+					"country is SY": true,
+					"lon is 36.3219": true,
+					"lat is 34.9401": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 3245": true,
+					"city_name is Taglag": true,
+					"country is IR": true,
+					"lon is 44.9833": true,
+					"lat is 38.45": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 72855": true,
+					"city_name is Al Jawl": true,
+					"country is YE": true,
+					"lon is 48.2807": true,
+					"lat is 14.4563": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 72965": true,
+					"city_name is Marib City": true,
+					"country is YE": true,
+					"lon is 45.3034": true,
+					"lat is 15.4156": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1563281": true,
+					"city_name is Tuy Hoa": true,
+					"country is VN": true,
+					"lon is 109.3": true,
+					"lat is 13.0833": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1563287": true,
+					"city_name is Tuyen Quang": true,
+					"country is VN": true,
+					"lon is 105.2181": true,
+					"lat is 21.8233": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1563926": true,
+					"city_name is Tra Vinh": true,
+					"country is VN": true,
+					"lon is 106.3453": true,
+					"lat is 9.9347": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1564676": true,
+					"city_name is Tỉnh Tiền Giang": false,
+					"country is VN": true,
+					"lon is 106.1667": true,
+					"lat is 10.4167": true
+				},
+				{
+					"Verify Status code is 200": true,
+					"id is 1569684": true,
+					"city_name is Pleiku": true,
+					"country is VN": true,
+					"lon is 108": true,
+					"lat is 13.9833": true
+				}
+			]
+		},
+		{
+			"id": "4c0583d6-525f-4c83-9703-440547f56ac2",
+			"name": "Get weather by valid city name and random space/character/number/special",
+			"time": 128,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Body string is city not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 11,
+					"fail": 0
+				},
+				"Body string is city not found": {
+					"pass": 11,
+					"fail": 0
+				}
+			},
+			"times": [
+				512,
+				502,
+				523,
+				135,
+				504,
+				558,
+				520,
+				506,
+				617,
+				528,
+				128
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				}
+			]
+		},
+		{
+			"id": "f73adf92-a102-486c-82f1-50027ced8325",
+			"name": "Get weather by random space/character/number/special",
+			"time": 48,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Body string is city not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 11,
+					"fail": 0
+				},
+				"Body string is city not found": {
+					"pass": 11,
+					"fail": 0
+				}
+			},
+			"times": [
+				62,
+				46,
+				57,
+				43,
+				53,
+				58,
+				51,
+				52,
+				47,
+				52,
+				48
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				},
+				{
+					"Status code is 404": true,
+					"Body string is city not found": true
+				}
+			]
+		}
+	],
+	"count": 11,
+	"totalTime": 15881,
+	"collection": {
+		"requests": [
+			{
+				"id": "27bdeec4-a625-4adf-a3cf-5b199adf614f",
+				"method": "GET"
+			},
+			{
+				"id": "d76bf41d-3a80-40ae-af41-330d34cfc658",
+				"method": "GET"
+			},
+			{
+				"id": "a96d5a30-9653-4bb0-b641-0a4fd812198e",
+				"method": "GET"
+			},
+			{
+				"id": "4c0583d6-525f-4c83-9703-440547f56ac2",
+				"method": "GET"
+			},
+			{
+				"id": "f73adf92-a102-486c-82f1-50027ced8325",
+				"method": "GET"
+			}
+		]
+	}
+}

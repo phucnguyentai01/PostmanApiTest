@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "0024ead6-794a-44c5-b506-e57f57faad65",
+		"name": "Searching_City_Collection",
+		"description": "API automated tests for the feature \"search weather in your city\" API.\n\nAPI: api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={APIkey}\n\nAPI Spec can be found here: https://openweathermap.org/current",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Expect success",
+			"item": [
+				{
+					"name": "Get weather by city name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"/* Response Body assertions will be skipped if the status code is not 200. This condition aims to reduce the number of unexpected failures and let users focus on the main issue only */\r",
+									"if(pm.response.to.have.status(200)){\r",
+									"    const responseJson = pm.response.json();\r",
+									"    var id = pm.variables.get(\"id\");\r",
+									"    pm.test(\"id is \"+id, () => {\r",
+									"      pm.expect(responseJson.id).to.eql(id);\r",
+									"    });\r",
+									"    var city_name = pm.variables.get(\"city_name\");\r",
+									"    pm.test(\"city_name is \"+city_name, () => {\r",
+									"      pm.expect(responseJson.name).to.eql(city_name);\r",
+									"    });\r",
+									"    var country = pm.variables.get(\"country\");\r",
+									"    pm.test(\"country is \"+country, () => {\r",
+									"      pm.expect(responseJson.sys.country).to.eql(country);\r",
+									"    });\r",
+									"    var lon = pm.variables.get(\"lon\");\r",
+									"    pm.test(\"lon is \"+lon, () => {\r",
+									"      pm.expect(responseJson.coord.lon).to.eql(lon);\r",
+									"    });\r",
+									"    var lat = pm.variables.get(\"lat\");\r",
+									"    pm.test(\"lat is \"+lat, () => {\r",
+									"      pm.expect(responseJson.coord.lat).to.eql(lat);\r",
+									"    });\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/data/2.5/weather?q={{city_name}},{{state_code}}&appid={{apiKey}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "{{city_name}},{{state_code}}"
+								},
+								{
+									"key": "appid",
+									"value": "{{apiKey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get weather by city name - upper",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"/* Response Body assertions will be skipped if the status code is not 200. This condition aims to reduce the number of unexpected failures and let users focus on the main issue only */\r",
+									"if(pm.response.to.have.status(200)){\r",
+									"    const responseJson = pm.response.json();\r",
+									"    var id = pm.variables.get(\"id\");\r",
+									"    pm.test(\"id is \"+id, () => {\r",
+									"      pm.expect(responseJson.id).to.eql(id);\r",
+									"    });\r",
+									"    var city_name = pm.variables.get(\"city_name\");\r",
+									"    pm.test(\"city_name is \"+city_name, () => {\r",
+									"      pm.expect(responseJson.name).to.eql(city_name);\r",
+									"    });\r",
+									"    var country = pm.variables.get(\"country\");\r",
+									"    pm.test(\"country is \"+country, () => {\r",
+									"      pm.expect(responseJson.sys.country).to.eql(country);\r",
+									"    });\r",
+									"    var lon = pm.variables.get(\"lon\");\r",
+									"    pm.test(\"lon is \"+lon, () => {\r",
+									"      pm.expect(responseJson.coord.lon).to.eql(lon);\r",
+									"    });\r",
+									"    var lat = pm.variables.get(\"lat\");\r",
+									"    pm.test(\"lat is \"+lat, () => {\r",
+									"      pm.expect(responseJson.coord.lat).to.eql(lat);\r",
+									"    });\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Convert city name to upper case //\r",
+									"var city_name_upper = pm.variables.get(\"city_name\").toUpperCase();\r",
+									"pm.environment.set(\"city_name_upper\",city_name_upper);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/data/2.5/weather?q={{city_name_upper}},{{state_code}}&appid={{apiKey}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "{{city_name_upper}},{{state_code}}"
+								},
+								{
+									"key": "appid",
+									"value": "{{apiKey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get weather by city name - lower",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"/* Response Body assertions will be skipped if the status code is not 200. This condition aims to reduce the number of unexpected failures and let users focus on the main issue only */\r",
+									"if(pm.response.to.have.status(200)){\r",
+									"    const responseJson = pm.response.json();\r",
+									"    var id = pm.variables.get(\"id\");\r",
+									"    pm.test(\"id is \"+id, () => {\r",
+									"      pm.expect(responseJson.id).to.eql(id);\r",
+									"    });\r",
+									"    var city_name = pm.variables.get(\"city_name\");\r",
+									"    pm.test(\"city_name is \"+city_name, () => {\r",
+									"      pm.expect(responseJson.name).to.eql(city_name);\r",
+									"    });\r",
+									"    var country = pm.variables.get(\"country\");\r",
+									"    pm.test(\"country is \"+country, () => {\r",
+									"      pm.expect(responseJson.sys.country).to.eql(country);\r",
+									"    });\r",
+									"    var lon = pm.variables.get(\"lon\");\r",
+									"    pm.test(\"lon is \"+lon, () => {\r",
+									"      pm.expect(responseJson.coord.lon).to.eql(lon);\r",
+									"    });\r",
+									"    var lat = pm.variables.get(\"lat\");\r",
+									"    pm.test(\"lat is \"+lat, () => {\r",
+									"      pm.expect(responseJson.coord.lat).to.eql(lat);\r",
+									"    });\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Convert city name to lower case //\r",
+									"var city_name_lower = pm.variables.get(\"city_name\").toLowerCase();\r",
+									"pm.environment.set(\"city_name_lower\",city_name_lower);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/data/2.5/weather?q={{city_name_lower}},{{state_code}}&appid={{apiKey}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "{{city_name_lower}},{{state_code}}"
+								},
+								{
+									"key": "appid",
+									"value": "{{apiKey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "These tests are to verify the expected success cases:\n- Response code should be 200\n- Response body should have proper values"
+		},
+		{
+			"name": "Expect failure",
+			"item": [
+				{
+					"name": "Get weather by valid city name and random space/character/number/special",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"/* Random values ​​in the list gives flexibility to find potential issues */\r",
+									"var randomString = [\" \",\"644  dd1\",\"2ff\",\"3 \",\"a\",\"5\",\"546\",\"7\",\"8\",\"iuw9sdfdgddhdvsgbtbvrvse5645gfhfgdgthgrgrhfgdgd.gdgfhdfdgdfgdghdgdgdggdgtvdvdvdhtdvdgddtbdb\",\"0\",\"---\",\"=!\",\".\",\")\",\":\",\"q\",\"UHGGFw\",\"e\",\"r\",\"t\",\"IJED\",\"u\",\"i\",\"o\",\"Cdg93\",\"N\",\"aB\"];\r",
+									"pm.environment.set(\"city_name_random1\",randomString[_.random(randomString.length-1)]);\r",
+									"pm.environment.set(\"city_name_random2\",randomString[_.random(randomString.length-1)]);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"/* Response Body assertions will be skipped if the status code is not 404. This condition aims to reduce the number of unexpected failures and let users focus on the main issue only */\r",
+									"if(pm.response.to.have.status(404)){\r",
+									"    pm.test(\"Body string is city not found\", () => {\r",
+									"      const responseJson = pm.response.json();\r",
+									"      pm.expect(responseJson.message).to.eql(\"city not found\");\r",
+									"    });\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/data/2.5/weather?q={{city_name_random1}}{{city_name}}{{city_name_random2}},{{state_code}}&appid={{apiKey}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "{{city_name_random1}}{{city_name}}{{city_name_random2}},{{state_code}}"
+								},
+								{
+									"key": "appid",
+									"value": "{{apiKey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get weather by random space/character/number/special",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"/* Random values ​​in the list gives flexibility to find potential issues */\r",
+									"var randomString = [\" \",\"644  dd1\",\"2ff\",\"3 \",\"a\",\"5\",\"546\",\"7\",\"8\",\"iuw9sdfdgddhdvsgbtbvrvse5645gfhfgdgthgrgrhfgdgd.gdgfhdfdgdfgdghdgdgdggdgtvdvdvdhtdvdgddtbdb\",\"0\",\"---\",\"=!\",\".\",\")\",\":\",\"q\",\"UHGGFw\",\"e\",\"r\",\"t\",\"IJED\",\"u\",\"i\",\"o\",\"Cdg93\",\"N\",\"aB\"];\r",
+									"pm.environment.set(\"city_name_random\",randomString[_.random(randomString.length-1)]);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"/* Response Body assertions will be skipped if the status code is not 404. This condition aims to reduce the number of unexpected failures and let users focus on the main issue only */\r",
+									"if(pm.response.to.have.status(404)){\r",
+									"    pm.test(\"Body string is city not found\", () => {\r",
+									"      const responseJson = pm.response.json();\r",
+									"      pm.expect(responseJson.message).to.eql(\"city not found\");\r",
+									"    });\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/data/2.5/weather?q={{city_name_random}}&appid={{apiKey}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "{{city_name_random}}"
+								},
+								{
+									"key": "appid",
+									"value": "{{apiKey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "These tests are to verify the expected failure cases:\n- Response code should be 404\n- Response body should be \"city not found\""
+		}
+	]
+}
