@@ -69,7 +69,7 @@ Please follow these steps:
 ---
 
 ## Data Driven for q parameter?
-* Please customize the Test Data CSV file, to configure for Test Suite running by Postman *(part2-postman-master/Resources/Example_Test_Data.csv)*. Then, select your CSV file when start running the Postman collection.
+* Please customize the Test Data CSV file, to configure for Test Suite running by Postman *(Resources/Example_Test_Data.csv)*. Then, select your CSV file when start running the Postman collection.
 * Here is a screenshot of Example_Test_Data.csv:
 
     ![image](Images/Picture10.png)
