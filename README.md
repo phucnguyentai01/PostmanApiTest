@@ -45,7 +45,7 @@ Please follow these steps:
 1. The number of Iterations.
 * Because there are 11 cities in the Test Data file, so the Iteration number is 11.
 2. The number of Passed/Failed Assertions.
-* 1 API request can have multiple assertions, so the number of assertions is much higher than the number of API requests multiply with Iterrations.
+* 1 API request can have multiple assertions, so the number of assertions is much higher than the number of API requests multiply with Iterations.
 
     ![image](Images/Picture4.png)
 
@@ -56,6 +56,7 @@ Please follow these steps:
 
 ## What is in the code?
 * {baseURL} and {apiKey} are defined as Environment variables.
+
     ![image](Images/Picture6.png)
 * There are some descriptions I provide inside the test suite.
     ![image](Images/Picture7.png)
