@@ -27,6 +27,7 @@ Please follow these steps:
 
 4. Run collection:
 * Select “Run collection” on the “Searching_City_Collection”
+
     ![image](Images/Picture1.png)
 * Select the “Searching_City_Environment” on the upper right corner
 * Tick the box "all API requests"
