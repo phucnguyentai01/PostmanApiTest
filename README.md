@@ -27,9 +27,8 @@ Please follow these steps:
 
 4. Run collection:
 * Select “Run collection” on the “Searching_City_Collection”
-
-* Select the “Searching_City_Environment” on the upper right corner
     ![image](Images/Picture1.png)
+* Select the “Searching_City_Environment” on the upper right corner
 * Tick the box "all API requests"
 * Tick the box “Save responses”
 * Click on the “Select File” and select “Resources/Example_API_Test_Data.csv” 
